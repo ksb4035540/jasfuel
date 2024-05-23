@@ -1,0 +1,89 @@
+/* style.css */
+
+body {
+  font-family: Poppins, 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f15922;
+  text-align: left;
+  color: #ffffff;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 10000;
+  font-size: 50px;
+  margin: 0;
+  background-color: #f15922;
+  color: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.assign-button,
+.journal-button,
+.receipt-button,
+.ot-button,
+.flight-schedule-button {
+  display: inline-block;
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #f15922;
+  border-radius: 5px;
+  color: #000000;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 5px; /* 수정된 부분 */
+}
+
+.assign-button:hover,
+.journal-button:hover,
+.receipt-button:hover,
+.ot-button:hover,
+.flight-schedule-button:hover {
+  background-color: #f15922;
+  color: #fff;
+}
+
+.footer {
+  background-color: #f15922;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#sectionContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.flight-info {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* 각 항목 사이의 간격 조정 */
+}
+
+.flight-info p {
+  margin: 5px 0; /* 항목 간격 조정 */
+}
+
+.flight-info p:last-child {
+  margin-bottom: 0; /* 마지막 항목의 하단 간격 제거 */
+}
