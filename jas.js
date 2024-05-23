@@ -1,6 +1,5 @@
 // jas.js
 
-// 페이지 로드 시 호출
 document.addEventListener('DOMContentLoaded', loadJejuAirSchedule);
 
 async function loadJejuAirSchedule() {
@@ -46,18 +45,7 @@ function displayFlightSchedule(scheduleData) {
         sectionContent.appendChild(flightInfoBox);
     });
 }
-// jas.js
 
-// Assign 버튼을 클릭했을 때 호출되는 함수
-function openAssignPage() {
-    // 여기에 Assign 페이지를 열기 위한 코드를 추가합니다.
-    // 예를 들어, window.location.href를 사용하여 새로운 페이지로 이동할 수 있습니다.
-    window.location.href = 'assign.html'; // assign.html은 내부 페이지의 파일명입니다.
-    console.log
-}
-
-// Assign 버튼 클릭 이벤트에 함수 연결
-document.querySelector('.assign-button').addEventListener('click', openAssignPage);
 function openAssignPage() {
     console.log('assign button clicked'); // 디버깅용 메시지
     window.location.href = 'assign.html';
